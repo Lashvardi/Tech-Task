@@ -14,6 +14,7 @@ Your mission is to create a dynamic web application that fetches and presents in
 - [APIs to Integrate](#-apis-to-integrate)
 - [Design References](#-design-references)
 - [Technologies to Use](#-technologies-to-use)
+- [Code Implementation Hints](#-code-implementation-hints)
 - [Installation & Setup](#-installation--setup)
 - [Evaluation Criteria](#-evaluation-criteria)
 - [Submission Guidelines](#-submission-guidelines)
@@ -43,6 +44,38 @@ Feel free to take inspiration from the following resources for the design of you
 - Angular
 - Restcountries API
 - Your choice of Image API
+
+## 💻 Code Implementation Hints
+
+One of the main objectives of this task is to get hands-on experience with Angular's `HttpClient`. It will be used to handle all HTTP requests to your APIs. Make sure to import it in your app module:
+
+```typescript
+import { HttpClientModule } from '@angular/common/http';
+
+@NgModule({
+  ...
+  imports: [
+    ...
+    HttpClientModule,
+    ...
+  ],
+  ...
+})
+export class AppModule { }
+```
+
+
+```typescript
+import { HttpClient } from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class DataService {
+  constructor(private httpClient: HttpClient) { }
+}
+```
+
 
 ## 🔧 Installation & Setup
 
