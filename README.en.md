@@ -1,6 +1,6 @@
 # 🌍 Angular Country Explorer - **Task**
 
-> 🌐 Instructions are available in other languages: [Georgian](README.ge.md),
+> 🌐 Instructions are available in other languages: [Georgian](README.md),
 
 Welcome to your assignment! You are going to build a Country Explorer web application using Angular and the Restcountries API. Get ready to showcase your Angular skills!
 
