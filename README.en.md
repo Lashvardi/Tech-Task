@@ -100,6 +100,12 @@ Your task will be evaluated based on:
 
 ## 📥 Submission Guidelines
 
-Once you've completed the task, submit a link to your repository via the designated submission platform.
+Once you've completed the task:
+
+1. Host your web application on [Vercel](https://vercel.com/).
+2. Submit the following via the designated submission platform:
+   - Link to your repository.
+   - Link to your hosted application on Vercel.
 
 Best of luck, and have fun building your country explorer! 🚀
+
