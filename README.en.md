@@ -109,3 +109,6 @@ Once you've completed the task:
 
 Best of luck, and have fun building your country explorer! 🚀
 
+---
+
+Made with 💖 by [Lashvardi](mailto:lashakakashvili114@gmail.com)
