@@ -1,54 +1,52 @@
-# 🌍 Angular Country Explorer - **Task**
+# 🌍 Angular ქვეყნების მკვლევარი - **ტექ. დავალება**
 
-> 🌐 Instructions are available in other languages: [Georgian](README.ge.md),
+> 🌐 Instructions are available in other languages: [English](README.en.md),
 
-Welcome to your assignment! You are going to build a Country Explorer web application using Angular and the Restcountries API. Get ready to showcase your Angular skills!
+მოგესალმებით, ეს არის თქვენი ტექნიკური დავალება. სადაც მოგიწევთ რომ ააწყოთ ქვეყნების მკვლევარი ვებ-აპლიკაცია Angular-ის გამოყენებით. RestCountries API-ს გამოყენებით.
 
-## 🎯 Objective
+## 🎯 მიზანი
 
-Your mission is to create a dynamic web application that fetches and presents information about various countries using the Restcountries API. Furthermore, you are required to use an image API to fetch and display captivating images of each country.
+თქვენი მიზანი არის ააწყოთ დინამიური ვებ-აპლიკაცია. სადაც განთავსებული იქნება ინფორმაცია ყველა ქვეყნის შესახებ Restcountries API-ს გამოყენებით. სურვილისამებრ გაქვთ საშუალება გამოიყენოთ [Pixabay](https://pixabay.com/api/docs/) API და გამოიტანოთ არამარტო ტექსტური ინფორმაცია არამეტ ქვეყნის ვიზუალებიც.
 
-## 📚 Table of Contents
+## 📚 Სარჩევი
 
-- [Required Features](#-required-features)
-- [APIs to Integrate](#-apis-to-integrate)
-- [Design References](#-design-references)
-- [Technologies to Use](#-technologies-to-use)
-- [Code Implementation Hints](#-code-implementation-hints)
-- [Installation & Setup](#-installation--setup)
-- [Evaluation Criteria](#-evaluation-criteria)
-- [Submission Guidelines](#-submission-guidelines)
+- [ფუნქციონალი](#ფუნქციონალ)
+- [API რომლებიც უნდა გამოიყენოთ](#-apis-to-integrate)
+- [დიზაინის მაგალითები](#-design-references)
+- [ტექნოლოგიები რომელიც უნდა გამოიყენო](#-technologies-to-use)
+- [კოდთან დაკავშირებული მითითებები](#-code-implementation-hints)
+- [პროექტის ინსტალაცია](#-installation--setup)
+- [შეფასების კრიტერიუმები](#-evaluation-criteria)
+- [დასრულების შემდეგ](#-submission-guidelines)
 
-## 💡 Required Features
+## 💡 ფუნქციონალი
 
-Your application should be able to:
+თქვენ ვებ-აპლიკაციას უნდა შეეძლოს:
 
-1. Display a list of all countries. Each country entry should at least include the country's name and flag.
-2. Allow users to click on a country to view more detailed information - population, area, languages spoken, etc.
-3. Provide a search function that enables users to search for a country by name.
-4. Fetch and display a relevant image for each country using an Image API of your choice.
+1. გამოიტანეთ ყველა ქვეყნის სია. თითოეული ქვეყნის ჩანაწერი მინიმუმ უნდა შეიცავდეს ქვეყნის სახელს და დროშას.
+2. მიეცით საშუალება მომხმარებლებს დააკლიკოს ქვეყანაზე რათა ნახოს უფრო დეტალური ინფორმაცია - მოსახლეობა, ფართობი, სალაპარაკო ენები და ა.შ.
+5. მიიღეთ და აჩვენეთ შესაბამისი სურათი თითოეული ქვეყნისთვის. [Pixabay](https://pixabay.com/api/docs/) API-ს გამოყენებით.
 
-## 🌐 APIs to Integrate
+## 🌐 API რომლებიც უნდა გამოიყენოთ
 
-- [Restcountries API](https://restcountries.com/): Fetch information about different countries.
-- Your choice of Image API: Fetch and display images related to each country.
+- [Restcountries API](https://restcountries.com/): მოგაწვდით ინფორმაციას ყველა ქვეყნის შესახებ.
+- [Pixabay](https://pixabay.com/api/docs/): მოგაწვდით ფოტოს ყველა ქვეყნისთვის.
 
-## 🎨 Design References
+## 🎨 დიზაინის მაგალითები
 
-Feel free to take inspiration from the following resources for the design of your application. Remember, a good user interface enhances the user experience!
+თავისუფლად მიიღეთ შთაგონება შემდეგი რესურსებიდან თქვენი აპლიკაციის დიზაინისთვის. გახსოვდეთ, კარგი მომხმარებლის ინტერფეისი აუმჯობესებს მომხმარებლის გამოცდილებას!
 
 - [Live Preview](https://angular-country-app.vercel.app/)
 
-## 🛠️ Technologies to Use
+## 🛠️ ტექნოლოგიები რომლებიც უნდა გამოიყენოთ
 
 - Angular
 - Restcountries API
-- Your choice of Image API
+- Pixabay API
 
-## 💻 Code Implementation Hints
+## 💻 კოდთან დაკავშირებული მითითებები
 
-One of the main objectives of this task is to get hands-on experience with Angular's `HttpClient`. It will be used to handle all HTTP requests to your APIs. Make sure to import it in your app module:
-
+ამ ამოცანის ერთ-ერთი მთავარი მიზანია პრაქტიკული გამოცდილების მიღება Angular-ის `HttpClient`-თან. ის გამოყენებული იქნება ყველა HTTP მოთხოვნის დასამუშავებლად თქვენს API-ებზე. დარწმუნდით, რომ შემოიტანეთ იგი თქვენს აპლიკაციის მოდულში:
 ```typescript
 import { HttpClientModule } from '@angular/common/http';
 
@@ -77,29 +75,22 @@ export class DataService {
 ```
 
 
-## 🔧 Installation & Setup
+## 🔧 პროექტის ინსტალაცია
 
-You are expected to:
+1. დაკლონეთ ეს რეპოზიტორია თქვენს კომპიუტერზე
+3. დააყენეთ Angular CLI: `npm install -g @angular/cli`
+4. დააყენეთ საჭირო Package-ბი: `npm install`
+5. დასტარტეთ აპლიკაცია: `ng serve`
 
-1. Fork and clone this repository.
-2. Navigate to your cloned repository.
-3. Install Angular CLI if you haven't done so yet: `npm install -g @angular/cli`
-4. Install the necessary dependencies: `npm install`
-5. Start the application: `ng serve`
-6. Open your browser and navigate to `http://localhost:4200`.
+## 📋 შეფასების კრიტერიუმები
 
-## 📋 Evaluation Criteria
+თქვენი შეფასება დამოკიდებულია:
 
-Your task will be evaluated based on:
+1. გამართულია თუარა ფუნქციურად ვებ-აპლიკაცია.
+2. კოდის ხარისხი: რამდენად ხარისხიანად არის კოდი დაწერილი.?
+3. User Interface: რამდენად ლამაზია ვებ-აპლიკაციის Interface-ი?
+4. რესპონსიულობა: რამდენად კარგად მუშაობს ვებ-აპლიკაცია სხვადასხვა ზომის ეკრანებზე.
 
-1. Functionality: Does the application work as expected?
-2. Code Quality: Is the code clean, readable, and well-organized?
-3. User Interface: Is the application easy to navigate and visually appealing?
-4. Responsiveness: Does the application display correctly on all screen sizes?
-5. Error Handling: How does the application handle potential errors, such as a failed API call?
+## 📥 დასრულების შემდეგ
 
-## 📥 Submission Guidelines
-
-Once you've completed the task, submit a link to your repository via the designated submission platform.
-
-Best of luck, and have fun building your country explorer! 🚀
+დავალების დასრულების შედმეგ დაუკავშირდით მას ვინც მოგცათ ეს დავალება. წარმატებები!!! 🚀
